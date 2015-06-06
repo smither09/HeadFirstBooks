@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 415</title>
+  <script>
+    function resize() {
+      var element = document.getElementById("display");
+      element.innerHTML = element.innerHTML + " that tickles!";
+    }
+  </script>
+</head>
+<body>
+  <p id="display">
+     whatever you doo, don't resize this window! I'm warning you!
+</body>
+<script>
+  window.onresize = resize;
+</script>
+</html>
